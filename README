@@ -1,0 +1,9 @@
+How to Setup Developement Environment:  (tested for windows machine) 
+
+1. Install 'mkroc' from setup folder.
+2. Download Arduino IDE and install it.
+3. Copy  AVR8051 config file from setup to C drive of your windows partition system.
+
+4. Compiled hex file can be uploaded using following command:
+
+"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe" -C C:/AVR8051.conf -c stk500v1 -P COM5 -p 89s52/1 -b 19200 -U flash:w:"PATH":a
